@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="ko">
-  <!-- 스크롤바 커스텀 -->
-  <style>
-    body::-webkit-scrollbar { width: 16px; } 
-    body::-webkit-scrollbar-track { background: linear-gradient(to bottom, rgb(243, 243, 243), rgb(102, 97, 233)); border-radius: 100px; } 
-    body::-webkit-scrollbar-thumb { background-color: #d4aa70; border-radius: 100px; } 
-    body { scrollbar-color: #D4AA70 #e4e4e4; } 
-    body::-webkit-scrollbar-thumb { background-image: linear-gradient(180deg, #1acc8d 0%, #708AD4 99%); box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5); border-radius: 100px; }
+<!-- 스크롤바 커스텀 -->
+<style>
+  body::-webkit-scrollbar {
+    width: 16px;
+  }
 
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, rgb(26, 204, 141), rgb(112, 138, 212));
+    border-radius: 100px;
+  }
 
-  </style>
+  body::-webkit-scrollbar-thumb {
+    background-color: #d4aa70;
+    border-radius: 100px;
+  }
+
+  body {
+    scrollbar-color: #D4AA70 #e4e4e4;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #1acc8d 0%, #708AD4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+  }
+</style>
+
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
+
   <title>DdareungMap</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -37,7 +54,7 @@
   <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
- 
+
   <link href="{% static 'css/style.css' %}" rel="stylesheet" />
 
   <!-- =======================================================
@@ -103,17 +120,20 @@
             <h1>따릉이 사용자를 위한 길찾기 서비스, <span>따릉이맵</span></h1>
             <h2>이제 길찾기를 이용하면서 따릉이 대여소 위치를 함께 확인해보세요! </h2>
             <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto"><i class="bi bi-bicycle"  style="vertical-align: middle; font-size: 2rem"></i> <span style="vertical-align: middle">따릉이맵</span> </a>
+              <a href="#about" class="btn-get-started scrollto"><i class="bi bi-bicycle"
+                  style="vertical-align: middle; font-size: 2rem"></i> <span style="vertical-align: middle">따릉이맵</span>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="{% static 'img/main.png' %}" class="img-fluid animated" alt="">
+          <img src="{% static 'img/riding.gif' %}" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
 
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
       <defs>
         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
       </defs>
@@ -137,27 +157,36 @@
       <div class="container-fluid">
 
         <div class="row d-flex align-items-start">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items stretch" data-aos="fade-right">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items stretch"
+            data-aos="fade-right">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+              data-autoplay="true"></a>
           </div>
 
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
+            data-aos="fade-left">
             <h3>자전거 길찾기 검색하면서 주변 대여소 위치를 알 수 없을까?</h3>
             <p>자전거 길 찾을 때 출발지, 도착지 근처 따릉이 대여소를 같이 확인할 수 없어서 불편하지 않으셨나요?
               저희 프로젝트는 이 의문점에서 출발하였습니다. 자전거 길 경로를 보면서
-            근처 대여소를 바로 확인하고 싶을때, 이제 한 화면에서 확인해보세요. </p>
+              근처 대여소를 바로 확인하고 싶을때, 이제 한 화면에서 확인해보세요. </p>
 
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div style="text-align : center;"><img src="{% static 'img/seoulbike.PNG' %}" alt="" class="img-fluid", width = 500px></div>
+              <div style="text-align : center;"><img src="{% static 'img/seoulbike.PNG' %}" alt="" class="img-fluid" ,
+                  width=500px></div>
               </a>
-              <div style="text-align : center;">서울 자전거 따릉이에서는 따릉이 대여소 조회만 가능 (출처 : <a href = https://www.bikeseoul.com/app/station/moveStationRealtimeStatus.do>서울자전거 따릉이 - 무인대여시스템</a>)</div>
+              <div style="text-align : center;">서울 자전거 따릉이에서는 따릉이 대여소 조회만 가능 (출처 : <a
+                  href=https://www.bikeseoul.com/app/station/moveStationRealtimeStatus.do>서울자전거 따릉이 - 무인대여시스템</a>)</div>
             </div>
-            
+
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div style="text-align : center;"><img src="{% static 'img/navermap.PNG' %}" alt="" class="img-fluid", width = 500px></div>
+              <div style="text-align : center;"><img src="{% static 'img/navermap.PNG' %}" alt="" class="img-fluid" ,
+                  width=500px></div>
               </a>
-              <div style="text-align : center;">자전거 길찾기에서 자전거 대여소를 확인하려면 경유지를 따로 설정해주어야함 
-                (출처 : <a href = https://map.naver.com/v5/directions/-/-/-/bike?c=14123297.4594607,4510110.4580963,12,0,0,0,dh>네이버 길찾기</a>)</div>
+              <div style="text-align : center;">자전거 길찾기에서 자전거 대여소를 확인하려면 경유지를 따로 설정해주어야함
+                (출처 : <a
+                  href=https://map.naver.com/v5/directions/-/-/-/bike?c=14123297.4594607,4510110.4580963,12,0,0,0,dh>네이버
+                  길찾기</a>)</div>
             </div>
 
           </div>
@@ -171,8 +200,8 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Features</h2>
-          <p>Check The Features</p>
+          <h2>Development Environment</h2>
+          <p>개발 환경</p>
         </div>
 
         <div class="row" data-aos="fade-left">
@@ -258,6 +287,9 @@
       <div class="container">
 
         <div class="row" data-aos="fade-up">
+          <div class="section-title" data-aos="fade-up">
+            <p>자전거 길찾기 실행</p>
+          </div>
 
           <!-- <div class="col-lg-3 col-md-6">
             <div class="count-box">
@@ -268,12 +300,13 @@
           </div> -->
 
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            
-            <div OnClick="location.href ='mapfind/'" class="count-box", text-align="center"></a>
-            
-              
+
+            <div OnClick="location.href ='mapfind/'" class="count-box" , text-align="center"></a>
+
+
               <i class="bi bi-bicycle" style="font-size: 2rem"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>자전거 길찾기 실행하기</p>
             </div>
           </div>
@@ -310,17 +343,20 @@
           <div class="col-md-8 pt-4" data-aos="fade-up">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
               magna aliqua.
             </p>
             <ul>
               <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="bi bi-check"></i> Iure at voluptas aspernatur dignissimos doloribus repudiandae.</li>
-              <li><i class="bi bi-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li>
+              <li><i class="bi bi-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.
+              </li>
             </ul>
             <p>
-              Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita omnis eum consequatur non. Sed in asperiores aut repellendus. Error quisquam ab maiores. Quibusdam sit in officia
+              Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita omnis eum consequatur non. Sed in
+              asperiores aut repellendus. Error quisquam ab maiores. Quibusdam sit in officia
             </p>
           </div>
         </div>
@@ -332,16 +368,20 @@
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
             <h3>Corporis temporibus maiores provident</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
               magna aliqua.
             </p>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum
             </p>
             <p>
-              Inventore id enim dolor dicta qui et magni molestiae. Mollitia optio officia illum ut cupiditate eos autem. Soluta dolorum repellendus repellat amet autem rerum illum in. Quibusdam occaecati est nisi esse. Saepe aut dignissimos distinctio id enim.
+              Inventore id enim dolor dicta qui et magni molestiae. Mollitia optio officia illum ut cupiditate eos
+              autem. Soluta dolorum repellendus repellat amet autem rerum illum in. Quibusdam occaecati est nisi esse.
+              Saepe aut dignissimos distinctio id enim.
             </p>
           </div>
         </div>
@@ -352,17 +392,20 @@
           </div>
           <div class="col-md-8 pt-5" data-aos="fade-up">
             <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut
+              quia voluptatem hic voluptas dolor doloremque.</p>
             <ul>
               <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
             </ul>
             <p>
-              Qui consequatur temporibus. Enim et corporis sit sunt harum praesentium suscipit ut voluptatem. Et nihil magni debitis consequatur est.
+              Qui consequatur temporibus. Enim et corporis sit sunt harum praesentium suscipit ut voluptatem. Et nihil
+              magni debitis consequatur est.
             </p>
             <p>
-              Suscipit enim et. Ut optio esse quidem quam reiciendis esse odit excepturi. Vel dolores rerum soluta explicabo vel fugiat eum non.
+              Suscipit enim et. Ut optio esse quidem quam reiciendis esse odit excepturi. Vel dolores rerum soluta
+              explicabo vel fugiat eum non.
             </p>
           </div>
         </div>
@@ -374,17 +417,20 @@
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
             <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
               magna aliqua.
             </p>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum
             </p>
             <ul>
               <li><i class="bi bi-check"></i> Et praesentium laboriosam architecto nam .</li>
-              <li><i class="bi bi-check"></i> Eius et voluptate. Enim earum tempore aliquid. Nobis et sunt consequatur. Aut repellat in numquam velit quo dignissimos et.</li>
+              <li><i class="bi bi-check"></i> Eius et voluptate. Enim earum tempore aliquid. Nobis et sunt consequatur.
+                Aut repellat in numquam velit quo dignissimos et.</li>
               <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
             </ul>
           </div>
@@ -487,7 +533,8 @@
                 <h4>Ceo &amp; Founder</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -500,7 +547,8 @@
                 <h4>Designer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -513,7 +561,8 @@
                 <h4>Store Owner</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -526,7 +575,8 @@
                 <h4>Freelancer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
+                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -539,7 +589,8 @@
                 <h4>Entrepreneur</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -729,46 +780,66 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                  gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                  ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
+                class="collapsed">Dolor sit amet consectetur adipiscing elit? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+                  integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+                  Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi
+                  quis
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
+                class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
+                  vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
+                  gravida quis blandit turpis cursus in.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
+                class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem
+                dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
+                  nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
+                  tellus in metus vulputate eu scelerisque.
                 </p>
               </div>
             </li>
@@ -855,7 +926,11 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div style="text-align : center;"><img src="{% static 'img/bike.jpg'%}" alt="" class="img-fluid" , width=700px>
+              </div> <!-- 최하단 이미지 관련 코드 -->
+            </div>
+            <!-- <div class="footer-info">
               <h3>Bootslander</h3>
               <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>
               <p>
@@ -871,10 +946,10 @@
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
-            </div>
+            </div> -->
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <!-- <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
@@ -883,8 +958,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
-          </div>
-
+          </div> -->
+<!-- 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
@@ -903,7 +978,7 @@
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
 
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -923,7 +998,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
