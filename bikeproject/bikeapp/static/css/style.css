@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Home쪽 이미지 */
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/main.png");
   position: relative;
   padding: 120px 0 0 0;
 }
@@ -837,7 +837,7 @@ section {
 --------------------------------------------------------------*/
 .counts {
   background: #f5f5ff;
-  padding: 70px 0 60px;
+  padding: 100px 0 60px;
 }
 .counts .count-box {
   padding: 30px 30px 25px 30px;
