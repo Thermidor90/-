@@ -701,13 +701,14 @@ section {
 
 /* About쪽 이미지 관련 */
 .about .video-box {
-  background: url("../img/8325.jpg") center center no-repeat;
-  background-size: contain;
-  min-height: 500px;
+  background: url("../img/riding.gif") no-repeat;
+  background-size: 500px 400px;
+  min-height: 700px;
+  background-position: 55% 20%;
 }
 /* About쪽 이미지 관련 */
 
-.about .play-btn {
+/* .about .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#3f43fd 50%, rgba(63, 67, 253, 0.4) 52%);
@@ -774,7 +775,7 @@ section {
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
-}
+} */
 
 @-webkit-keyframes pulsate-btn {
   0% {
@@ -818,13 +819,14 @@ section {
   padding: 0;
   line-height: 1;
   font-size: 16px;
+  color: #9B26E9;
 }
 .features .icon-box h3 a {
-  color: #010483;
+  color: #9B26E9;
   transition: ease-in-out 0.3s;
 }
 .features .icon-box h3 a:hover {
-  color: #01036f;
+  color: #9B26E9;
 }
 .features .icon-box:hover {
   background: #ebebff;
@@ -871,7 +873,7 @@ section {
   padding: 0;
   margin: 0;
   font-family: "ONE", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
