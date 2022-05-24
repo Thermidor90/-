@@ -837,7 +837,7 @@ section {
 --------------------------------------------------------------*/
 .counts {
   background: #f5f5ff;
-  padding: 100px 0 60px;
+  padding: 100px 0 100px;
 }
 .counts .count-box {
   padding: 30px 30px 25px 30px;
@@ -845,7 +845,6 @@ section {
   position: relative;
   text-align: center;
   background: #fff;
-  
 }
 .counts .count-box i {
   position: absolute;
