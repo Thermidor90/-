@@ -651,7 +651,7 @@ section {
 }
 .about .icon-boxes h3 {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
   color: #010483;
   margin-bottom: 15px;
 }
@@ -883,28 +883,33 @@ section {
 /*--------------------------------------------------------------
 # Details
 --------------------------------------------------------------*/
-.details .content + .content {
+.details .content {
   margin-top: 100px;
 }
-.details .content h3 {
-  font-weight: 600;
+.details .content2 {
+  margin-top: 100px
+}
+/* index.html에서  <div class="row content">만 있던 걸 <div class="row content2">를 추가해서 각각 margin값을 줬습니다. */
+.details .content + .content2 h3 {
+  font-weight: 500;
   font-size: 26px;
   color: #010483;
 }
-.details .content ul {
+.details .content + .content2 ul {
   list-style: none;
   padding: 0;
 }
-.details .content ul li {
+.details .content + .content2 ul li {
   padding-bottom: 10px;
 }
-.details .content ul i {
+/* 체크아이콘 */ .details .content ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #1acc8d;
-}
-.details .content p:last-child {
-  margin-bottom: 0;
+} 
+.details .content + .content2 p:last-child {
+  margin-bottom: 0px;
+  /* margin-top: 100px; */
 }
 
 /*--------------------------------------------------------------
@@ -1508,14 +1513,14 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+
 .bg{
   width: 100%;
   height:auto;
-  min-height:100vh;
-  background: linear-gradient(#f9f9f9 0%, #67B7FD 100%);
-  /* background-image:url(http://i.imgur.com/w16HASj.png); */
-  background-size: 100% 100%;
-  background-position: top center;
+  min-height:55vh;
+  background: linear-gradient(rgba(255, 255, 255, 1.0), rgba(103, 183, 253, 0.99))
+  /* background-size: 100% 100%; */
+  /* background-position: top center; */
 }
 
 .content{
@@ -1534,15 +1539,14 @@ border-radius: 25px;
 border: solid 1px black;
 background: transparent;
 width: 200px;
-height: 30px;
-padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 
 
 input,input::-webkit-input-placeholder {
   font-size: 12px;
-  color:black;
+color:black;
 }
 
 .social-btn{
@@ -1553,7 +1557,8 @@ left: 47%;
 
 i{
 padding:5px;
-color:rgba(91, 196, 228, 0.91);
+color:black;
+
 }
 
 input, input:focus{
@@ -1565,19 +1570,18 @@ border: solid 1px black;
       -webkit-box-shadow: none;
 }
 
-/* 출발지 도착지 글자색 */
 .secondLine{
 font-weight: 350;
 font-size:15px;
 margin-bottom: 10%;
-color: rgba(91, 196, 228, 0.91);
+color: black;
+
 }
 
 .firstLine{
 font-size: 30px;
-color: rgba(91, 196, 228, 0.91);
+color: black;
 }
-/* 출발지 도착지 글자색 */
 
 @media only screen and (max-width: 600px) {
 .firstLine{
