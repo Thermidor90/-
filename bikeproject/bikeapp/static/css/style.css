@@ -890,16 +890,28 @@ section {
   margin-top: 100px
 }
 /* index.html에서  <div class="row content">만 있던 걸 <div class="row content2">를 추가해서 각각 margin값을 줬습니다. */
-.details .content + .content2 h3 {
+.details .content h3 {
   font-weight: 500;
   font-size: 26px;
   color: #010483;
 }
-.details .content + .content2 ul {
+.details .content2 h3 {
+  font-weight: 500;
+  font-size: 26px;
+  color: #010483;
+}
+.details .content ul {
   list-style: none;
   padding: 0;
 }
-.details .content + .content2 ul li {
+.details .content2 ul {
+  list-style: none;
+  padding: 0;
+}
+.details .content ul li {
+  padding-bottom: 10px;
+}
+.details .content2 ul li {
   padding-bottom: 10px;
 }
 /* 체크아이콘 */ .details .content ul i {
@@ -907,9 +919,11 @@ section {
   padding-right: 4px;
   color: #1acc8d;
 } 
-.details .content + .content2 p:last-child {
+.details .content p:last-child {
   margin-bottom: 0px;
-  /* margin-top: 100px; */
+}
+.details .content2 p:last-child {
+  margin-bottom: 0px;
 }
 
 /*--------------------------------------------------------------
